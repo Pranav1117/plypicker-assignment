@@ -172,6 +172,7 @@ const ProductDetails = () => {
             </div>
           ))}
           <input
+            className="choose-img-btn"
             multiple
             type="file"
             onChange={(e) => handleEditImage(e)}
