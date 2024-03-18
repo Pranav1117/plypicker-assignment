@@ -19,27 +19,6 @@ const Login = () => {
 
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   let token = localStorage.getItem("ply-token");
-
-  //   const checkUserLoggedIn = async () => {
-  //     try {
-  //       if (token) {
-  //         axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
-  //         let { data } = await axios.get("http://localhost:3001/getuser");
-
-  //         if (data.user) {
-  //           dispatch(setUser(data.user));
-  //           navigate(`/dashboard/${data.user.role}`);
-  //         }
-  //       }
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   };
-  //   checkUserLoggedIn();
-  // }, []);
-
   const handleNav = () => {
     navigate("/register");
   };

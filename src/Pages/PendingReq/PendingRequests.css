@@ -31,24 +31,20 @@
   }
   
 
-  /* Basic styling for the container */
 .container {
   max-width: 800px;
   margin: auto;
   padding: 20px;
 }
 
-/* Styling for headings */
 h2, h3 {
   color: #333;
 }
 
-/* Styling for properties */
 .property {
   margin-bottom: 10px;
 }
 
-/* Styling for changes */
 .changes {
   margin-top: 20px;
 }
@@ -58,18 +54,18 @@ h2, h3 {
 }
 
 .old {
-  color: red; /* Color for old values */
+  color: rgb(0, 0, 0); 
 }
 
 .new {
-  color: green; /* Color for new values */
+  color: rgb(252, 44, 37);
 }
 
 .arrow {
   margin: 0 5px;
 }
 
-/* Styling for approve/reject buttons */
+
 .apr-rej-btn-container {
   margin-top: 20px;
 }
@@ -78,17 +74,16 @@ button {
   padding: 10px 20px;
   margin-right: 10px;
   cursor: pointer;
-  background-color: #007bff; /* Button color */
-  color: white; /* Button text color */
+  background-color: #007bff; 
+  color: white; 
   border: none;
   border-radius: 5px;
 }
 
 button:hover {
-  background-color: #0056b3; /* Button color on hover */
+  background-color: #0056b3; 
 }
 
-/* Styling for image */
 .image-container {
   margin-top: 20px;
 }

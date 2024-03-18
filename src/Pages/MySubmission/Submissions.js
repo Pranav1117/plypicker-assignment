@@ -41,9 +41,7 @@ const Submissions = () => {
           {userRequest.length > 0 ? (
             userRequest.map((request, index) => (
               <div key={index} className="request-item">
-                <div className="request-info">
-                  Name: {request.changes.productName}
-                </div>
+                <div className="request-info">Name: {request.productName}</div>
                 <div className="request-info">
                   Product Id: {request.productId}
                 </div>

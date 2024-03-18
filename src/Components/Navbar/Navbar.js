@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import "./Navbar.css"; // Import the CSS file for your navbar styling
+import "./Navbar.css"; 
 import axios from "axios";
 const Navbar = () => {
   const { email, role } = useSelector((state) => state.user);

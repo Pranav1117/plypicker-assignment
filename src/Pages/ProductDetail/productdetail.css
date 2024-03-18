@@ -5,10 +5,6 @@
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%); */
     margin-top: 2rem;
     gap: 4rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -66,7 +62,7 @@
 .product-image-wrapper.multiple-images {
     width: 50%;
     padding: 1rem;
-    object-fit: fill; /* If there are multiple images, set width to 50% */
+    object-fit: fill; 
 }
 .product-image img{
     width: 100%;

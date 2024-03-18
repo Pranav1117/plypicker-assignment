@@ -1,25 +1,35 @@
 .profile-container {
+    margin-top: 3rem;
     padding: 20px;
+    width: 50%;
+    margin-inline: auto;
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   
   .profile-name {
-    font-size: 24px;
+    font-size: 34px;
     color: #333;
     margin-bottom: 10px;
   }
   
   .profile-role {
     font-size: 20px;
-    color: #555;
+    color: #767676;
     margin-bottom: 10px;
   }
   
   .profile-info {
-    font-size: 18px;
+    font-size: 23px;
     color: #666;
     margin-bottom: 5px;
+    margin-top: 2rem;
   }
   
+  .name-role-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  }

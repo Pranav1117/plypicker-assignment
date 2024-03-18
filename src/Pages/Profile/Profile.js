@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useSelector } from "react-redux";
-import "./Profile.css"; // Import the CSS file for your profile styling
+import "./Profile.css"; 
 import Navbar from "../../Components/Navbar/Navbar";
 
 const Profile = () => {
@@ -40,8 +40,10 @@ const Profile = () => {
     <>
       <Navbar />
       <div className="profile-container">
-        <h2 className="profile-name">Name: {email}</h2>
-        <h3 className="profile-role">Role: {role}</h3>
+        <div className="name-role-wrapper">
+          <h2 className="profile-name">    {email}</h2>
+          <h3 className="profile-role"> {role}</h3>
+        </div>
         <div className="profile-info">
           Total number of Requests: {req.allRequest}
         </div>

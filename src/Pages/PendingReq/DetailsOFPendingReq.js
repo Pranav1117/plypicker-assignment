@@ -148,7 +148,6 @@ const DetailsOFPendingReq = () => {
                 <button onClick={handleApprove}>Approve</button>
                 <button onClick={handleReject}>Reject</button>
               </div>
-              {/* {showModal && <Modal message={modalMessage} />} */}
             </div>
           )}
         </div>
