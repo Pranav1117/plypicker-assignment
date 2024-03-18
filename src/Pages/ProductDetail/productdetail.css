@@ -1,0 +1,75 @@
+.product-details-container{
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    margin-top: 2rem;
+    gap: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1rem;
+}
+
+.product-detail-title{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.product-details{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.product-details form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.product-details form input{
+    padding: 0.5rem;
+
+}
+
+.review-req-btn{
+    width: clamp(90px, 50%, 500px);
+    padding: 0.5rem;
+    border: 1px solid rgb(253, 152, 51);
+    cursor: pointer;
+    background-color: rgb(253, 152, 51);
+    border-radius:5px ;
+    font-size: 1.1rem;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+.review-req-btn:hover{
+    background-color: transparent;
+    color: rgb(253, 152, 51);
+}   
+
+.product-image{
+    width: clamp(10rem,30em,35rem);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-image-wrapper{
+    width: 100%;
+}
+.product-image-wrapper.multiple-images {
+    width: 50%;
+    padding: 1rem;
+    object-fit: fill; /* If there are multiple images, set width to 50% */
+}
+.product-image img{
+    width: 100%;
+    object-fit: contain;
+    
+}

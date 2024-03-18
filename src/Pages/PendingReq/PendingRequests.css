@@ -1,0 +1,100 @@
+
+.pending-requests-container {
+    padding: 20px;
+  }
+  
+  .pending-requests-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .requests-list {
+    display: grid;
+    grid-gap: 20px;
+  }
+  
+  .request-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+  }
+  
+  .request-info {
+    margin-bottom: 10px;
+  }
+  
+  .no-requests {
+    font-style: italic;
+    color: #666;
+  }
+  
+
+  /* Basic styling for the container */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Styling for headings */
+h2, h3 {
+  color: #333;
+}
+
+/* Styling for properties */
+.property {
+  margin-bottom: 10px;
+}
+
+/* Styling for changes */
+.changes {
+  margin-top: 20px;
+}
+
+.change {
+  margin-bottom: 5px;
+}
+
+.old {
+  color: red; /* Color for old values */
+}
+
+.new {
+  color: green; /* Color for new values */
+}
+
+.arrow {
+  margin: 0 5px;
+}
+
+/* Styling for approve/reject buttons */
+.apr-rej-btn-container {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #007bff; /* Button color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Button color on hover */
+}
+
+/* Styling for image */
+.image-container {
+  margin-top: 20px;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}

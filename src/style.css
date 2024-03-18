@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+  
+}

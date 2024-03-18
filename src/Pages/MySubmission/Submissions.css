@@ -1,0 +1,35 @@
+
+
+.submissions-container {
+    padding: 20px;
+    
+
+  }
+  
+  .submissions-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .requests-list {
+    display: grid;
+    grid-gap: 20px;
+   
+  }
+  
+  .request-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .request-info {
+    margin-bottom: 10px;
+  }
+  
+  .no-requests {
+    font-style: italic;
+    color: #666;
+  }
+  
