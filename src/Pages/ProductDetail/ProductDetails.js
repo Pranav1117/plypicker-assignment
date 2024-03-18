@@ -90,14 +90,14 @@ const ProductDetails = () => {
           `http://localhost:3001/updateproduct`,
           editedProduct
         );
-        console.log(resp.data, "admin role");
+        navigate("/dashboard/admin");
       } else {
         let resp = await axios.post(`http://localhost:3001/product/review`, {
           product,
           email,
           changes,
         });
-        console.log(resp.data);
+        navigate("/profile/my-submissions");
       }
     } catch (error) {
       console.error("Error updating product:", error);
@@ -111,6 +111,7 @@ const ProductDetails = () => {
   return (
     <>
       <Navbar />
+
       <h2 className="product-detail-title">Product Detail</h2>
       <div className="product-details-container">
         <div className="product-details">

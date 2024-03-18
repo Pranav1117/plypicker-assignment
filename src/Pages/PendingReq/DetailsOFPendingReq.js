@@ -1,11 +1,11 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 import Modal from "../../Utilities/Modal";
 const DetailsOFPendingReq = () => {
   const params = useParams();
-
+  const navigate = useNavigate();
   const productId = params.request_id;
 
   const {
@@ -87,6 +87,7 @@ const DetailsOFPendingReq = () => {
         productId,
         changes: propertiesToSend,
       });
+      navigate("/dashboard/admin");
 
       showModalWithMessage("Request approved successfully.");
     } catch (error) {
@@ -101,6 +102,7 @@ const DetailsOFPendingReq = () => {
         _id,
         changes,
       });
+      navigate("/dashboard/admin");
       showModalWithMessage("Request rejected successfully.");
     } catch (error) {
       showModalWithMessage("Error rejecting request. Please try again later.");
@@ -118,10 +120,10 @@ const DetailsOFPendingReq = () => {
   return (
     <>
       <Navbar />
+
       <div className="container">
         <h2>Details of Pending Request</h2>
         <div className="details">
-          <h3>Original Object</h3>
           {ogProduct && (
             <div>
               {Object.entries(ogProduct).map(([key, value]) =>
@@ -146,6 +148,7 @@ const DetailsOFPendingReq = () => {
                 <button onClick={handleApprove}>Approve</button>
                 <button onClick={handleReject}>Reject</button>
               </div>
+              {/* {showModal && <Modal message={modalMessage} />} */}
             </div>
           )}
         </div>
@@ -159,7 +162,6 @@ const DetailsOFPendingReq = () => {
           </div>
         )}
       </div>
-      {showModal && <Modal message={modalMessage} />}
     </>
   );
 };

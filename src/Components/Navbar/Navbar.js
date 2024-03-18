@@ -1,9 +1,14 @@
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css"; // Import the CSS file for your navbar styling
-
+import axios from "axios";
 const Navbar = () => {
   const { email, role } = useSelector((state) => state.user);
+  const navigate = useNavigate();
+  const handleLogout = async () => {
+    localStorage.removeItem("ply-token");
+    navigate("/");
+  };
   return (
     <div className="navbar-container">
       <Link to="/profile" className="navbar-link">
@@ -24,6 +29,8 @@ const Navbar = () => {
       <Link to={`/dashboard/${role}`} className="navbar-link">
         Dashboard
       </Link>
+
+      <button onClick={handleLogout}>Logout</button>
     </div>
   );
 };
